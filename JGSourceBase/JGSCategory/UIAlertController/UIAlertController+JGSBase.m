@@ -199,7 +199,7 @@ static NSPointerArray *jg_ShowingAlertControllers = nil;
                 [jg_ShowingAlertControllers removePointerAtIndex:i];
             }
         }
-        
+        [self jg_SysAlertWindow].userInteractionEnabled = NO;
         if (jg_ShowingAlertControllers.allObjects.count == 0) {
             
             // 动画开始时 alert 已完全消失
